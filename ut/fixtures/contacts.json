@@ -1,0 +1,48 @@
+[
+  {
+    "model": "user_contacts.contact",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "phone": "+66 111 111"
+    }
+  },
+  {
+    "model": "user_contacts.contact",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "phone": "+40 222 222"
+    }
+  },
+  {
+    "model": "user_contacts.address",
+    "pk": 1,
+    "fields": {
+      "contact": 1,
+      "name": "home",
+      "city": "BKK",
+      "address": "12 Soi Sukhumvit"
+    }
+  },
+  {
+    "model": "user_contacts.address",
+    "pk": 2,
+    "fields": {
+      "contact": 1,
+      "name": "office",
+      "city": "BKK",
+      "address": "Central Plaza"
+    }
+  },
+  {
+    "model": "user_contacts.address",
+    "pk": 3,
+    "fields": {
+      "contact": 2,
+      "name": "home",
+      "city": "Bucuresti",
+      "address": "militari"
+    }
+  }
+]

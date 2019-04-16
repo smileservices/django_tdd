@@ -1,0 +1,37 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Jvq6Jjh3mFry$O89EMC/fhSqjiHggCPlkipPKl4fjNn/JqJX3TTUSfow=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-04-12T08:44:08.112Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}, {
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Jvq6Jjh3mFry$O89EMC/fhSqjiHggCPlkipPKl4fjNn/JqJX3TTUSfow=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "live",
+    "first_name": "",
+    "last_name": "",
+    "email": "live@forever.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-04-12T08:44:08.112Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
