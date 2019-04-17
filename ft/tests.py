@@ -1,18 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-from django.test import LiveServerTestCase
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 import time
 
+
 class AdminTest(StaticLiveServerTestCase):
-    
-    fixtures = ['fixtures/admin.json',]
+    fixtures = ['fixtures/admin.json', ]
 
     def setUp(self):
         self.browser = webdriver.Firefox(executable_path=r'C:\geckodriver\geckodriver.exe')
@@ -44,4 +41,4 @@ class AdminTest(StaticLiveServerTestCase):
         user_link[0].click()
         # user verifies that user live@forever.com is present
         body = self.browser.find_element_by_tag_name('body')
-        self.assertIn('live@forever.com', body.text)
+        self.assertIn('some_user@gmail.com', body.text)
